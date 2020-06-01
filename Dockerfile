@@ -9,4 +9,4 @@ EXPOSE 25565
 EXPOSE 9010
 
 CMD chown -R root /minecraft && touch $STARTUP_SCRIPT && chmod +x $STARTUP_SCRIPT
-ENTRYPOINT screen -dmS "Server" "$STARTUP_SCRIPT"
+ENTRYPOINT bash
